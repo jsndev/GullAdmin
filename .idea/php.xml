@@ -109,9 +109,22 @@
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/src/vendor/scrivo/highlight.php" />
       <path value="$PROJECT_DIR$/src/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/src/vendor/paragonie/constant_time_encoding" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/fortify" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/jetstream" />
+      <path value="$PROJECT_DIR$/src/vendor/mobiledetect/mobiledetectlib" />
+      <path value="$PROJECT_DIR$/src/vendor/pragmarx/google2fa" />
+      <path value="$PROJECT_DIR$/src/vendor/jenssegers/agent" />
+      <path value="$PROJECT_DIR$/src/vendor/jaybizzle/crawler-detect" />
+      <path value="$PROJECT_DIR$/src/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/src/vendor/dasprid/enum" />
+      <path value="$PROJECT_DIR$/src/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/src/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/src/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/http-client-contracts" />
     </include_path>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
   <component name="PhpUnit">
     <phpunit_settings>
       <PhpUnitSettings custom_loader_path="$PROJECT_DIR$/src/vendor/autoload.php" />
