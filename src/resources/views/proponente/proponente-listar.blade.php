@@ -2,6 +2,10 @@
 @section('page-css')
 
     <link rel="stylesheet" href="{{asset('assets/styles/vendor/datatables.min.css')}}">
+
+    <style type="text/css">
+
+    </style>
 @endsection
 
 @section('main-content')
@@ -33,14 +37,14 @@
                                         <span class="ul-btn__text">Novo</span>
                                     </button>
 
-                                    <button type="button" class="btn btn-outline-danger btn-icon m-1" disabled>
+                                    <button type="button" id="btnRemove" class="btn btn-outline-danger btn-icon m-1" disabled>
                                         <span class="ul-btn__icon">
                                             <i class="i-Remove-File"></i>
                                         </span>
                                         <span class="ul-btn__text">Excluir</span>
                                     </button>
 
-                                    <button type="button" class="btn btn-outline-warning btn-icon m-1" disabled>
+                                    <button type="button" id="btnEdit" class="btn btn-outline-warning btn-icon m-1" disabled>
                                         <span class="ul-btn__icon">
                                             <i class="i-File-Edit"></i>
                                         </span>
@@ -49,14 +53,14 @@
                                 </div>
 
                                 <div class="col-md-6 text-right">
-                                    <button type="button" class="btn btn-outline-primary btn-icon m-1">
+                                    <button type="button" id="btnPrint" class="btn btn-outline-primary btn-icon m-1" disabled>
                                         <span class="ul-btn__icon">
                                             <i class="i-File-Pie"></i>
                                         </span>
                                         <span class="ul-btn__text">Imprimir</span>
                                     </button>
 
-                                    <button type="button" class="btn btn-outline-primary btn-icon m-1">
+                                    <button type="button" id="btnPdf" class="btn btn-outline-primary btn-icon m-1" disabled>
                                         <span class="ul-btn__icon">
                                             <i class="i-File-Loading"></i>
                                         </span>
@@ -74,7 +78,7 @@
 
 
             <div class="table-responsive">
-                <table id="scroll_horizontal_vertical_table" class="display nowrap table thead-light" style="width:100%">
+                <table id="scroll_horizontal_vertical_table" class="display nowrap table thead-light table-hover" style="width:100%">
                     @include('datatables.table_content')
                 </table>
             </div>
