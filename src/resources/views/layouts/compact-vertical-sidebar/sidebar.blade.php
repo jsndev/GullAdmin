@@ -1,75 +1,87 @@
 <div class="side-content-wrap">
     <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
         <ul class="navigation-left">
-            <li class="nav-item {{ request()->is('dashboard/*') ? 'active' : '' }} {{ request()->is('large-compact-sidebar/dashboard/*') ? 'active' : '' }}"
-                data-item="dashboard">
+            <li class="nav-item {{ request()->is('participantes/*') ? 'active' : '' }}" data-item="participantes">
                 <a class="nav-item-hold" href="#">
-                    <i class="nav-icon i-Bar-Chart"></i>
-                    <span class="nav-text">Dashboard</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
-            <li class="nav-item {{ request()->is('uikits/*') ? 'active' : '' }}" data-item="uikits">
-                <a class="nav-item-hold" href="#">
-                    <i class="nav-icon i-Library"></i>
-                    <span class="nav-text">UI kits</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
-            <li class="nav-item {{ request()->is('extrakits/*') ? 'active' : '' }}" data-item="extrakits">
-                <a class="nav-item-hold" href="#">
-                    <i class="nav-icon i-Suitcase"></i>
-                    <span class="nav-text">Extra kits</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
-            <li class="nav-item {{ request()->is('apps/*') ? 'active' : '' }}" data-item="apps">
-                <a class="nav-item-hold" href="#">
-                    <i class="nav-icon i-Computer-Secure"></i>
-                    <span class="nav-text">Apps</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
-
-
-            <li class="nav-item {{ request()->is('forms/*') ? 'active' : '' }}" data-item="forms">
-                <a class="nav-item-hold" href="#">
-                    <i class="nav-icon i-File-Clipboard-File--Text"></i>
-                    <span class="nav-text">Forms</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
-
-            <li class="nav-item {{ request()->is('charts/*') ? 'active' : '' }}" data-item="charts">
-                <a class="nav-item-hold" href="#">
-                    <i class="nav-icon i-Bar-Chart-5"></i>
-                    <span class="nav-text">Charts</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
-
-
-            <li class="nav-item {{ request()->is('datatables/*') ? 'active' : '' }}">
-                <a class="nav-item-hold" href="{{route('basic-tables')}}">
-                    <i class="nav-icon i-File-Horizontal-Text"></i>
-                    <span class="nav-text">Datatables</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
-            <li class="nav-item {{ request()->is('sessions/*') ? 'active' : '' }}" data-item="sessions">
-                <a class="nav-item-hold" href="/test.html">
                     <i class="nav-icon i-Administrator"></i>
-                    <span class="nav-text">Sessions</span>
+                    <span class="nav-text">Participantes</span>
                 </a>
                 <div class="triangle"></div>
             </li>
-            <li class="nav-item {{ request()->is('others/*') ? 'active' : '' }}" data-item="others">
-                <a class="nav-item-hold" href="">
-                    <i class="nav-icon i-Double-Tap"></i>
-                    <span class="nav-text">Others</span>
-                </a>
-                <div class="triangle"></div>
-            </li>
+
+{{--            <li class="nav-item {{ request()->is('dashboard/*') ? 'active' : '' }} {{ request()->is('large-compact-sidebar/dashboard/*') ? 'active' : '' }}"--}}
+{{--                data-item="dashboard">--}}
+{{--                <a class="nav-item-hold" href="#">--}}
+{{--                    <i class="nav-icon i-Bar-Chart"></i>--}}
+{{--                    <span class="nav-text">Dashboard</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
+{{--            <li class="nav-item {{ request()->is('uikits/*') ? 'active' : '' }}" data-item="uikits">--}}
+{{--                <a class="nav-item-hold" href="#">--}}
+{{--                    <i class="nav-icon i-Library"></i>--}}
+{{--                    <span class="nav-text">UI kits</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
+{{--            <li class="nav-item {{ request()->is('extrakits/*') ? 'active' : '' }}" data-item="extrakits">--}}
+{{--                <a class="nav-item-hold" href="#">--}}
+{{--                    <i class="nav-icon i-Suitcase"></i>--}}
+{{--                    <span class="nav-text">Extra kits</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
+{{--            <li class="nav-item {{ request()->is('apps/*') ? 'active' : '' }}" data-item="apps">--}}
+{{--                <a class="nav-item-hold" href="#">--}}
+{{--                    <i class="nav-icon i-Computer-Secure"></i>--}}
+{{--                    <span class="nav-text">Apps</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
+{{--            <li class="nav-item {{ request()->is('forms/*') ? 'active' : '' }}" data-item="forms">--}}
+{{--                <a class="nav-item-hold" href="#">--}}
+{{--                    <i class="nav-icon i-File-Clipboard-File--Text"></i>--}}
+{{--                    <span class="nav-text">Forms</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
+{{--            <li class="nav-item {{ request()->is('charts/*') ? 'active' : '' }}" data-item="charts">--}}
+{{--                <a class="nav-item-hold" href="#">--}}
+{{--                    <i class="nav-icon i-Bar-Chart-5"></i>--}}
+{{--                    <span class="nav-text">Charts</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
+{{--            <li class="nav-item {{ request()->is('datatables/*') ? 'active' : '' }}">--}}
+{{--                <a class="nav-item-hold" href="{{route('basic-tables')}}">--}}
+{{--                    <i class="nav-icon i-File-Horizontal-Text"></i>--}}
+{{--                    <span class="nav-text">Datatables</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
+{{--            <li class="nav-item {{ request()->is('sessions/*') ? 'active' : '' }}" data-item="sessions">--}}
+{{--                <a class="nav-item-hold" href="/test.html">--}}
+{{--                    <i class="nav-icon i-Administrator"></i>--}}
+{{--                    <span class="nav-text">Sessions</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
+{{--            <li class="nav-item {{ request()->is('others/*') ? 'active' : '' }}" data-item="others">--}}
+{{--                <a class="nav-item-hold" href="">--}}
+{{--                    <i class="nav-icon i-Double-Tap"></i>--}}
+{{--                    <span class="nav-text">Others</span>--}}
+{{--                </a>--}}
+{{--                <div class="triangle"></div>--}}
+{{--            </li>--}}
+
             <li class="nav-item">
                 <a class="nav-item-hold" href="http://demos.ui-lib.com/gull-html-doc/" target="_blank">
                     <i class="nav-icon i-Safe-Box1"></i>
@@ -607,6 +619,7 @@
                 </li>
             </ul>
         </div>
+
         <div class="submenu-area" data-parent="sessions">
             <header>
                 <h6>Session Pages</h6>
@@ -633,40 +646,26 @@
                 </li>
             </ul>
         </div>
-        <div class="submenu-area" data-parent="others">
+
+
+
+        <div class="submenu-area" data-parent="participantes">
+
             <header>
-                <h6>Pages</h6>
-                <p>Lorem ipsum dolor sit.</p>
+                <h6>Participantes</h6>
+                <p>Participantes do contrato</p>
             </header>
-            <ul class="childNav" data-parent="others">
+
+            <ul class="childNav" data-parent="participantes">
                 <li class="nav-item">
-                    <a href="{{route('notFound')}}">
-                        <i class="nav-icon i-Error-404-Window"></i>
-                        <span class="item-name">Not Found</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="{{ Route::currentRouteName()=='user-profile' ? 'open' : '' }}"
-                        href="{{route('user-profile')}}">
+                    <a class="{{ Route::currentRouteName()=='proponente' ? 'open' : '' }}"
+                       href="{{route('proponente')}}">
                         <i class="nav-icon i-Male"></i>
-                        <span class="item-name">User Profile</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="{{ Route::currentRouteName()=='faq' ? 'open' : '' }}" href="{{route('faq')}}"
-                        class="open">
-                        <i class="nav-icon i-File-Horizontal"></i>
-                        <span class="item-name">faq</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="{{ Route::currentRouteName()=='starter' ? 'open' : '' }}" href="{{route('starter')}}"
-                        class="open">
-                        <i class="nav-icon i-File-Horizontal"></i>
-                        <span class="item-name">Blank Page</span>
+                        <span class="item-name">Proponente</span>
                     </a>
                 </li>
             </ul>
+
         </div>
     </div>
     <div class="sidebar-overlay"></div>

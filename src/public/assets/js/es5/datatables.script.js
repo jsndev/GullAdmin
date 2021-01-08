@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-    // contact-list-table 
+    // contact-list-table
     $('#contact_list_table').DataTable({ searching: false });
 
     // zero table
@@ -48,7 +48,7 @@ $(document).ready(function () {
         }]
     });
 
-    // complex header 
+    // complex header
     $('#complex_header_table').DataTable();
 
     // dom positioning
@@ -61,29 +61,31 @@ $(document).ready(function () {
         "pagingType": "full_numbers"
     });
 
-    // scroll vertical 
+    // scroll vertical
     $('#scroll_vertical_table').DataTable({
         "scrollY": "200px",
         "scrollCollapse": true,
         "paging": false
     });
 
-    // scroll horizontal 
+    // scroll horizontal
     $('#scroll_horizontal_table').DataTable({
         "scrollX": true
     });
 
-    // scroll vertical dynamic height  
+    // scroll vertical dynamic height
     $('#scroll_vertical_dynamic_height_table').DataTable({
         scrollY: '50vh',
         scrollCollapse: true,
         paging: false
     });
 
-    // scroll vertical and horizontal 
+    // scroll vertical and horizontal
     $('#scroll_horizontal_vertical_table').DataTable({
-        "scrollY": 200,
-        "scrollX": true
+        "scrollY": 400,
+        "scrollX": true,
+        paging: false
+
     });
 
     // comma decimal

@@ -26,6 +26,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    session(['layout' => 'compact']);
     return view('dashboard.dashboardv1');
 });
 // Route::view('/', 'starter')->name('starter');
@@ -167,3 +168,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// AThos::LAravel
+Route::view('participantes/proponente/list', 'proponente.proponente-listar')->name('proponente');
+
