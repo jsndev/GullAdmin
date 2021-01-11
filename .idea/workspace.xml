@@ -11,9 +11,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8ff7c92-6b7a-4b90-bb9e-9e101043356e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/ParticipanteController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/TestController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Models/Participante.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Models/Test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/factories/ParticipanteFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/migrations/2021_01_08_214646_create_participantes_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/seeders/ParticipanteSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gull-laravel-athos-2021.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gull-laravel-athos-2021.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/public/assets/js/datatables.script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/assets/js/datatables.script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpdocker/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/phpdocker/php-fpm/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpdocker/php-fpm/php-ini-overrides.ini" beforeDir="false" afterPath="$PROJECT_DIR$/phpdocker/php-fpm/php-ini-overrides.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/views/proponente/proponente-listar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/proponente/proponente-listar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +173,9 @@
       <path value="$PROJECT_DIR$/src/vendor/phpunit/php-token-stream" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/src/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/src/vendor/mongodb/mongodb" />
+      <path value="$PROJECT_DIR$/src/vendor/jean85/pretty-package-versions" />
+      <path value="$PROJECT_DIR$/src/vendor/jenssegers/mongodb" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mktR5nJFsmVIeO1Kl6VBJIPfFp" />
@@ -183,6 +202,21 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -196,6 +230,7 @@
       <workItem from="1610057628766" duration="300000" />
       <workItem from="1610059130652" duration="4008000" />
       <workItem from="1610064609734" duration="9692000" />
+      <workItem from="1610122297165" duration="10405000" />
     </task>
     <servers />
   </component>
@@ -222,6 +257,10 @@
       <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state x="330" y="90" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.805@0.23.1440.805" timestamp="1610071019423" />
+    <state x="458" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610143171004">
+      <screen x="0" y="23" width="1440" height="805" />
+    </state>
+    <state x="458" y="187" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.805@0.23.1440.805" timestamp="1610143171004" />
     <state x="535" y="339" key="NewPhpFileDialog" timestamp="1610065692348">
       <screen x="0" y="23" width="1440" height="805" />
     </state>
@@ -242,9 +281,9 @@
       <screen x="0" y="23" width="1440" height="805" />
     </state>
     <state x="418" y="58" width="604" height="735" key="find.popup/0.23.1440.805@0.23.1440.805" timestamp="1610074719521" />
-    <state x="397" y="152" width="670" height="676" key="search.everywhere.popup" timestamp="1610070564210">
+    <state x="397" y="152" width="670" height="676" key="search.everywhere.popup" timestamp="1610137089391">
       <screen x="0" y="23" width="1440" height="805" />
     </state>
-    <state x="397" y="152" width="670" height="676" key="search.everywhere.popup/0.23.1440.805@0.23.1440.805" timestamp="1610070564210" />
+    <state x="397" y="152" width="670" height="676" key="search.everywhere.popup/0.23.1440.805@0.23.1440.805" timestamp="1610137089391" />
   </component>
 </project>

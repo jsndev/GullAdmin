@@ -32,7 +32,9 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/jaybizzle/crawler-detect" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/jean85/pretty-package-versions" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/jenssegers/agent" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/jenssegers/mongodb" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/fortify" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/jetstream" />
@@ -45,6 +47,7 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/livewire/livewire" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/mobiledetect/mobiledetectlib" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/mongodb/mongodb" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/nesbot/carbon" />

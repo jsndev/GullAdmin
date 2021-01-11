@@ -10,6 +10,9 @@
 
 @section('main-content')
 
+    @foreach ($participantes as $user)
+        <p>This is user {{ $user->nome }}</p>
+    @endforeach
     <div class="breadcrumb">
         <h1>Participantes</h1>
         <ul>
@@ -79,7 +82,35 @@
 
             <div class="table-responsive">
                 <table id="scroll_horizontal_vertical_table" class="display nowrap table thead-light table-hover" style="width:100%">
-                    @include('datatables.table_content')
+                    <thead>
+                    <tr>
+                        <th>Proponente</th>
+                        <th>CPF</th>
+                        <th>Data Nasc</th>
+                        <th>Estado Civil</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    @foreach ($participantes as $user)
+                        <tr>
+                            <td>{{ $user->nome }}</td>
+                            <td>{{ $user->cpf }}</td>
+                            <td>{{ $user->data_nascimento }}</td>
+                            <td>Casado</td>
+                        </tr>
+                    @endforeach
+
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <th>Proponente</th>
+                        <th>CPF</th>
+                        <th>Data Nasc</th>
+                        <th>Estado Civil</th>
+                    </tr>
+                    </tfoot>
+
                 </table>
             </div>
 

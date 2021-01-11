@@ -171,5 +171,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 // AThos::LAravel
-Route::view('participantes/proponente/list', 'proponente.proponente-listar')->name('proponente');
 
+
+Route::get('/test', [App\Http\Controllers\TestController::class, 'index'])->name('test');
+Route::get('/participantes/proponente/list', [App\Http\Controllers\ParticipanteController::class, 'index'])->name('proponente');
