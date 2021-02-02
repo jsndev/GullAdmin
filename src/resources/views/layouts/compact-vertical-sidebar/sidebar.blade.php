@@ -9,6 +9,22 @@
                 <div class="triangle"></div>
             </li>
 
+            <li class="nav-item {{ request()->is('propostas/*') ? 'active' : '' }}" data-item="propostas">
+                <a class="nav-item-hold" href="#">
+                    <i class="nav-icon i-File-Bookmark"></i>
+                    <span class="nav-text">Propostas</span>
+                </a>
+                <div class="triangle"></div>
+            </li>
+
+            <li class="nav-item {{ request()->is('configuracoes/*') ? 'active' : '' }}" data-item="configuracoes">
+                <a class="nav-item-hold" href="#">
+                    <i class="nav-icon i-Gear-2"></i>
+                    <span class="nav-text">Configurações</span>
+                </a>
+                <div class="triangle"></div>
+            </li>
+
 {{--            <li class="nav-item {{ request()->is('dashboard/*') ? 'active' : '' }} {{ request()->is('large-compact-sidebar/dashboard/*') ? 'active' : '' }}"--}}
 {{--                data-item="dashboard">--}}
 {{--                <a class="nav-item-hold" href="#">--}}
@@ -83,7 +99,7 @@
 {{--            </li>--}}
 
             <li class="nav-item">
-                <a class="nav-item-hold" href="http://demos.ui-lib.com/gull-html-doc/" target="_blank">
+                <a class="nav-item-hold" href="#" target="_blank">
                     <i class="nav-icon i-Safe-Box1"></i>
                     <span class="nav-text">Doc</span>
                 </a>
@@ -664,6 +680,93 @@
                         <span class="item-name">Proponente</span>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="{{ Route::currentRouteName()=='vendedor' ? 'open' : '' }}"
+                       href="{{route('vendedor')}}">
+                        <i class="nav-icon i-Male"></i>
+                        <span class="item-name">Vendedor </span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="submenu-area" data-parent="propostas">
+
+            <header>
+                <h6>Participantes</h6>
+                <p>Propostas de usuários</p>
+            </header>
+
+            <ul class="childNav" data-parent="propostas">
+                <li class="nav-item">
+                    <a class="{{ Route::currentRouteName()=='propostasnaopreenchidas' ? 'open' : '' }}"
+                       href="{{route('propostasnaopreenchidas')}}">
+                        <i class="nav-icon i-File-Block"></i>
+                        <span class="item-name">Não Preenchidas</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="{{ Route::currentRouteName()=='propostasexpiradas' ? 'open' : '' }}"
+                       href="{{route('propostasexpiradas')}}">
+                        <i class="nav-icon i-File-Block"></i>
+                        <span class="item-name">Expiradas </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="{{ Route::currentRouteName()=='propostasremetidas' ? 'open' : '' }}"
+                       href="{{route('propostasremetidas')}}">
+                        <i class="nav-icon i-File-Block"></i>
+                        <span class="item-name">Remetidas </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="{{ Route::currentRouteName()=='propostasemitir' ? 'open' : '' }}"
+                       href="{{route('propostasemitir')}}">
+                        <i class="nav-icon i-File-Block"></i>
+                        <span class="item-name">Emitir contrato </span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="submenu-area" data-parent="configuracoes">
+
+            <header>
+                <h6>Configurações</h6>
+                <p>Configurcões do contrato</p>
+            </header>
+
+            <ul class="childNav" data-parent="propostas">
+                <li class="nav-item">
+                    <a
+                        href="#">
+                        <i class="nav-icon i-File-Block"></i>
+                        <span class="item-name">Contrato </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        href="#">
+                        <i class="nav-icon i-File-Block"></i>
+                        <span class="item-name">Participantes </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a
+                        href="#">
+                        <i class="nav-icon i-File-Block"></i>
+                        <span class="item-name">Usuários </span>
+                    </a>
+                </li>
+
             </ul>
 
         </div>

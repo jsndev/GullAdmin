@@ -12,7 +12,7 @@
     <div class="breadcrumb">
         <h1>Participantes</h1>
         <ul>
-            <li><a href="">Proponentes</a></li>
+            <li><a href="">Vendedor</a></li>
             <li>Lista</li>
         </ul>
     </div>
@@ -29,7 +29,7 @@
 
                             <div class="row">
                                 <div class="col-md-6">
-
+                                
                                     <button type="button" class="btn btn-outline-success btn-icon m-1" data-toggle="modal" data-target=".bd-example-modal-lg">
                                         <span class="ul-btn__icon">
                                             <i class="i-Add-File"></i>
@@ -83,34 +83,7 @@
                         <div class="card-body">
             <div class="table-responsive">
                 <table id="scroll_horizontal_vertical_table" class="display nowrap table thead-light table-hover" style="width:100%">
-                    <thead>
-                    <tr>
-                        <th>Proponente</th>
-                        <th>CPF</th>
-                        <th>Data Nasc</th>
-                        <th>Estado Civil</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-
-                    @foreach ($participantes as $user)
-                        <tr>
-                            <td>{{ $user->nome }}</td>
-                            <td>{{ $user->cpf }}</td>
-                            <td>{{ $user->data_nascimento }}</td>
-                            <td>Casado</td>
-                        </tr>
-                    @endforeach
-
-                    </tbody>
-                    <tfoot>
-                    <tr>
-                        <th>Proponente</th>
-                        <th>CPF</th>
-                        <th>Data Nasc</th>
-                        <th>Estado Civil</th>
-                    </tr>
-                    </tfoot>
+                    @include('datatables.basic-tables-vendedor')
 
                 </table>
             </div>
@@ -150,6 +123,6 @@
 
 
         });
-    </script>
+    </script>   
 @endsection
 

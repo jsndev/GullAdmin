@@ -174,4 +174,31 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/test', [App\Http\Controllers\TestController::class, 'index'])->name('test');
-Route::get('/participantes/proponente/list', [App\Http\Controllers\ParticipanteController::class, 'index'])->name('proponente');
+
+
+Route::get('/participantes/proponente/list', [App\Http\Controllers\ParticipanteController::class, 'index'], function () {
+    session(['layout' => 'compact']);
+
+})->name('proponente');
+
+Route::get('/participantes/vendedor/list', [App\Http\Controllers\ParticipanteController::class, 'vendedor'], function () {
+    session(['layout' => 'compact']);
+
+})->name('vendedor');
+
+Route::get('/propostas/propostasnaopreenchidas/list', [App\Http\Controllers\ParticipanteController::class, 'propostasnaopreenchidas'], function () {
+    session(['layout' => 'compact']);
+
+})->name('propostasnaopreenchidas');
+Route::get('/propostas/propostasexpiradas/list', [App\Http\Controllers\ParticipanteController::class, 'propostasexpiradas'], function () {
+    session(['layout' => 'compact']);
+
+})->name('propostasexpiradas');
+Route::get('/propostas/propostasremetidas/list', [App\Http\Controllers\ParticipanteController::class, 'propostasremetidas'], function () {
+    session(['layout' => 'compact']);
+
+})->name('propostasremetidas');
+Route::get('/propostas/propostasemitir/list', [App\Http\Controllers\ParticipanteController::class, 'propostasemitir'], function () {
+    session(['layout' => 'compact']);
+
+})->name('propostasemitir');

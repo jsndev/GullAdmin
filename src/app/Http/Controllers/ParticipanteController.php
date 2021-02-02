@@ -22,6 +22,57 @@ class ParticipanteController extends Controller
         );
     }
 
+    public function vendedor() {
+        $participantes = Participante::orderBy('nome')->get();
+
+        return view(
+            'proponente.vendedor-listar',
+            ['participantes' => $participantes]
+
+        );
+    }
+
+    public function propostasnaopreenchidas() {
+        $participantes = Participante::orderBy('nome')->get();
+
+        return view(
+            'proponente.proposta-nao-preenchida-listar',
+            ['participantes' => $participantes]
+
+        );
+    }
+
+    public function propostasexpiradas() {
+        $participantes = Participante::orderBy('nome')->get();
+
+        return view(
+            'proponente.proposta-expirada-listar',
+            ['participantes' => $participantes]
+
+        );
+    }
+
+    public function propostasremetidas() {
+        $participantes = Participante::orderBy('nome')->get();
+
+        return view(
+            'proponente.proposta-remetida-listar',
+            ['participantes' => $participantes]
+
+        );
+    }
+
+
+    public function propostasemitir() {
+        $participantes = Participante::orderBy('nome')->get();
+
+        return view(
+            'proponente.proposta-emitir-listar',
+            ['participantes' => $participantes]
+
+        );
+    }
+
     /**
      * Show the form for creating a new resource.
      *

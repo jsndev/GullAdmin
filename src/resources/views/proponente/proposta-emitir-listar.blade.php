@@ -12,7 +12,7 @@
     <div class="breadcrumb">
         <h1>Participantes</h1>
         <ul>
-            <li><a href="">Proponentes</a></li>
+            <li><a href="">Emissão de contrato</a></li>
             <li>Lista</li>
         </ul>
     </div>
@@ -34,21 +34,7 @@
                                         <span class="ul-btn__icon">
                                             <i class="i-Add-File"></i>
                                         </span>
-                                        <span class="ul-btn__text">Novo</span>
-                                    </button>
-
-                                    <button type="button" id="btnRemove" class="btn btn-outline-danger btn-icon m-1" disabled>
-                                        <span class="ul-btn__icon">
-                                            <i class="i-Remove-File"></i>
-                                        </span>
-                                        <span class="ul-btn__text">Excluir</span>
-                                    </button>
-
-                                    <button type="button" id="btnEdit" class="btn btn-outline-warning btn-icon m-1" disabled>
-                                        <span class="ul-btn__icon">
-                                            <i class="i-File-Edit"></i>
-                                        </span>
-                                        <span class="ul-btn__text">Editar</span>
+                                        <span class="ul-btn__text">Abrir</span>
                                     </button>
                                 </div>
 
@@ -83,34 +69,7 @@
                         <div class="card-body">
             <div class="table-responsive">
                 <table id="scroll_horizontal_vertical_table" class="display nowrap table thead-light table-hover" style="width:100%">
-                    <thead>
-                    <tr>
-                        <th>Proponente</th>
-                        <th>CPF</th>
-                        <th>Data Nasc</th>
-                        <th>Estado Civil</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-
-                    @foreach ($participantes as $user)
-                        <tr>
-                            <td>{{ $user->nome }}</td>
-                            <td>{{ $user->cpf }}</td>
-                            <td>{{ $user->data_nascimento }}</td>
-                            <td>Casado</td>
-                        </tr>
-                    @endforeach
-
-                    </tbody>
-                    <tfoot>
-                    <tr>
-                        <th>Proponente</th>
-                        <th>CPF</th>
-                        <th>Data Nasc</th>
-                        <th>Estado Civil</th>
-                    </tr>
-                    </tfoot>
+                    @include('datatables.proposta-emitir')
 
                 </table>
             </div>
@@ -125,7 +84,7 @@
 
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <livewire:form-pessoa-fisica></livewire:form-pessoa-fisica>
+            <livewire:form-no-sql></livewire:form-no-sql>
         </div>
     </div>
 

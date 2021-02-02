@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    $(".btnSubmit").click(function() {
+        alert()         
+        $("#form").submit(); 
+    });
+
     let table =  $('#scroll_horizontal_vertical_table').DataTable({
         "scrollY": 300,
         "scrollX": true,

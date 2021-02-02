@@ -41,10 +41,12 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/sanctum" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/tinker" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravel/ui" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/laravellegends/pt-br-validator" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/league/mime-type-detection" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/livewire/livewire" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/lucascudo/laravel-pt-br-localization" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/mobiledetect/mobiledetectlib" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/mockery/mockery" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/mongodb/mongodb" />
